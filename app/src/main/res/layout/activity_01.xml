@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity01">
+
+    <Spinner
+        android:id="@+id/Spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       />
+
+    <TextView
+        android:id="@+id/stateTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="stan_magazynu" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="ilosc"
+            android:layout_width="106dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/infoTextView"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="Skladuj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/setButton"
+            android:layout_weight="1"/>
+
+
+        <Button
+            android:text="@string/wydaj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/getButton"
+            android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>
